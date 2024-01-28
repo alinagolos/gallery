@@ -1,0 +1,52 @@
+.container {
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+body {
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    rgb(17, 22, 21),
+    rgb(42, 90, 92),
+    rgb(142, 144, 129)
+  );
+  background-size: 500% 500%;
+  animation: back 5s ease infinite;
+}
+@keyframes back {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.gallery {
+  margin: 7vh 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 50px;
+  justify-content: center;
+}
+
+.gallery a img {
+  width: 350px;
+  height: 350px;
+  transition: all 0.3s;
+  border-radius: 5%;
+}
+
+.gallery a img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.lg-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
